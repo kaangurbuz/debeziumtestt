@@ -1,0 +1,16 @@
+{
+    "name": "test-connector",
+    "config": {
+        "connector.class": "io.debezium.connector.postgresql.PostgresConnector",
+        "tasks.max": "1",
+        "topic.prefix" : "datatransfer",
+        "database.hostname": "host.docker.internal",
+        "database.port": "5432",
+        "database.user": "postgres",
+        "database.password": "123456",
+        "database.dbname": "ProductDB",
+        "database.server.name": "host.docker.internal",
+        "database.whitelist": "product",
+        "plugin.name": "pgoutput"
+    }
+}
